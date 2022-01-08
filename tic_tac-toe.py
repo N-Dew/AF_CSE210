@@ -1,8 +1,3 @@
-'''
-Tic-Tac-Toe: A Solution
-Author: Bro. Manley
-'''
-
 def main():
     player = next_player("")
     board = create_board()
