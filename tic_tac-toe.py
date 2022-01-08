@@ -1,11 +1,11 @@
 
-#This is our main function. Everything below this is essentially pulled into this in order to run the game.
+#This is our main function. Everything below (except for the last few lines) is essentially pulled into this in order to run the game.
 def main():
     player = next_player("")
     board = create_board()
 
-    # This while is to say that while these two things are not true, keep playing.
-    # This will loop throug until there is a draw or there is a winner.
+    # This while loop is to say that while these two things are not true, keep playing.
+    # This will keep looping throug until the conditions are met, there is a draw or there is a winner.
     while not (has_winner(board) or is_a_draw(board)):
         display_board(board)
         make_move(player, board)
